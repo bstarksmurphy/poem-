@@ -1,8 +1,50 @@
-<h1>Hello World Wide Web!</h1>
 <head>
-  
+  <title>to fall asleep in the carr</title>
+  <style>
+  .container{
+  position: relative;
+  text-align: center;
+  color: white;
+  }
+  .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 50%;
+  }
+    canvas{position:absolute; 
+    top: 0px;
+    left: 0px;
+    }
+  </style>
 </head>
 
-<body>
-  <a href="page2.html">page 2</a>
+<body style="background: #020024;
+background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);">
+  <div class="container">
+  <image src="treeinwind.jpeg" style="mix-blend-mode: overlay;"></image>
+    <div class="text">to close the eyes and drift</div>
+  <a class="text" href="page2.html">page 2</a>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+<script>
+  /* global p5 */
+ function setup(){
+   createCanvas(900,900);
+ }
+function draw(){
+  background(245, 1);
+  frameRate(1);
+  blendMode(ADD);
+  
+  for(let i=0; i < 5; i++)
+    {
+      ellipse(100,100, 50), random(0,900),random(0,900));
+    }
+      
+}
+</script>
 </body>
+
