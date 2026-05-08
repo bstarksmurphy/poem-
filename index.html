@@ -14,6 +14,12 @@
   color: white;
   opacity: 50%;
   }
+    .link{
+      position: absolute;
+      text-align: center;
+      color: white;
+      bottom: 25%;
+    }
     canvas{position:absolute; 
     top: 0px;
     left: 0px;
@@ -25,8 +31,9 @@
 background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);">
   <div class="container">
   <image src="treeinwind.jpeg" style="mix-blend-mode: overlay;"></image>
-    <div class="text">to close the eyes and drift</div>
-  <a class="text" href="page2.html">page 2</a>
+    <div class="text">to close the eyes and drift<br> I love the blue<br> sky
+    <br> waves<br><br><br> and cars</div>
+  <a class="link" href="page2.html">page 2</a>
   </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
 <script>
@@ -37,11 +44,11 @@ background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%
 function draw(){
   background(245, 1);
   frameRate(1);
-  blendMode(ADD);
+  blendMode(OVERLAY);
   
-  for(let i=0; i < 5; i++)
+  for(let i=0; i < 10; i++)
     {
-      ellipse(100,100, 50), random(0,900),random(0,900));
+      ellipse(random(0,900),random(0,900), 1, 1);
     }
       
 }
