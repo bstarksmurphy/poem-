@@ -1,5 +1,6 @@
 <head>
   <title>to fall asleep in the car</title>
+  <audio src="windSounds.mp3" autoplay></audio>
   <style>
   .container{
   position: relative;
@@ -14,16 +15,24 @@
   color: white;
   opacity: 50%;
   }
-    .link{
+  .link{
       position: absolute;
       text-align: center;
+      top: 75%;
+      left: 60%;
       color: white;
       bottom: 25%;
+    }
+  .corner{
+      position: absolute;
+    top: 5%;
+    left: 25%;
+    color: darkblue;
     }
     canvas{position:absolute; 
     top: 0px;
     left: 0px;
-  pointer-events: none; /* Clicks pass through */
+  pointer-events: none; 
 }
 
     }
@@ -36,7 +45,12 @@ background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%
   <image src="treeinwind.jpeg" style="mix-blend-mode: overlay;"></image>
     <div class="text">to close the eyes and drift<br> I love the blue<br> sky
     <br> waves<br><br><br> and cars</div>
-  <a class="link" href="page2.html">drifting on the highway</a>
+  <a class="link" href="page2.html">drifting on the highway<br> with the rays
+    of sun</a>
+    <div class="corner">
+      journey amoungst roads and mileage <br> moving but unmoved <br> 
+      to become whisful and warm
+    </div>
   </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
 <script>
