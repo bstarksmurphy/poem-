@@ -1,7 +1,9 @@
 <head>
 <title> the rays through eyelids</title>
   <style>
-    
+    .container{
+      text-align: center;
+    }
     .text{
       position: absolute;
       color: white;
@@ -10,12 +12,22 @@
       left: 50%;
       opacity: 50%;
     }
+    .image1{
+      position: absolute;
+      align-content: center;
+    }
   canvas{
     position:absolute; 
     top: 0px;
     left: 0px;
     pointer-events: none;
     } 
+    .link{
+      position: absolute;
+      color: white;
+      right: 25%;
+      top: 80%;
+    }
   
   </style>
 </head>
@@ -27,8 +39,8 @@ background: radial-gradient(circle, rgba(245, 151, 51, 1) 0%, rgba(237, 60, 28, 
   <div class="container">
     <div class="text"> passing by like rays of sun <br> dreams of wind running
     <br> through grass<br> through hair <br> and through window cracks</div>
-    
-    
+    <img src="sunGlare.jpeg" width="55%" style="mix-blend-mode: overlay;"></img>
+    <a class="link" href="home.html"> a sudden stop</a>
   </div>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
