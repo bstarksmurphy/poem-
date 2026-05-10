@@ -1,0 +1,77 @@
+<head>
+<title> the rays through eyelids</title>
+  <style>
+    
+    .text{
+      position: absolute;
+      color: white;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      opacity: 50%;
+    }
+  canvas{
+    position:absolute; 
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    } 
+  
+  </style>
+</head>
+
+
+<body style="background: #f59733;
+background: radial-gradient(circle, rgba(245, 151, 51, 1) 0%, rgba(237, 60, 28, 1) 100%);">
+  <audio src="windSounds.mp3" autoplay></audio>
+  <div class="container">
+    <div class="text"> passing by like rays of sun <br> dreams of wind running
+    <br> through grass<br> through hair <br> and through window cracks</div>
+    
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+<script>
+  /* global p5 */
+   let rectX=0;
+   let rectY= 0;
+  
+  let recX= 500;
+  let recY= 0;
+  
+  let rectaX= 250;
+  let rectaY= 0;
+ function setup(){
+   createCanvas(windowWidth,windowHeight);
+
+ }
+function draw(){
+  background(245, 1);
+  blendMode(SCREEN);
+  frameRate(2);
+  
+  rectX = rectX+ 5;
+  rectY = rectY+10;
+  strokeWeight(0);
+  fill(245, 145, 39);
+  rect(rectX,rectY, 20,20);
+  
+  recX = recX+8;
+  recY = recY+8;
+  strokeWeight(0);
+  fill(245, 221, 39);
+  rect(recX,recY, 100,50);
+  
+  rectaX = rectaX + 5;
+  rectaY = rectaY + 10;
+  strokeWeight(0);
+  fill(201, 104, 6);
+  rect(rectaX,rectaY, 30,45)
+      
+}
+</script>
+
+
+</body>
+
