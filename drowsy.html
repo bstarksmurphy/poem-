@@ -27,7 +27,7 @@
     position: absolute;
     top: 5%;
     left: 10%;
-    color: white;
+    color: black;
     }
     canvas{
     position: absolute; 
@@ -46,18 +46,19 @@ background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%
   <image src="treeinwind.jpeg" style="mix-blend-mode: overlay;"></image>
     <div class="text">to close the eyes and drift<br> I love the blue<br> sky
     <br> waves<br><br><br> and cars</div>
-  <a class="link" href="page2.html">drifting on the highway<br> with the rays
+  <a class="link" href="sleep.html">drifting on the highway<br> with the rays
     of sun</a>
     <div class="corner">
       journey amoungst roads and mileage <br> moving but unmoved <br> 
       to become whisful and warm
     </div>
   </div>
+  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
 <script>
   /* global p5 */
  function setup(){
-   createCanvas(2000,1250);
+   createCanvas(windowWidth,windowHeight);
  }
 function draw(){
   background(245, 1);
