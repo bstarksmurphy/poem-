@@ -1,9 +1,64 @@
 <head>
 <title>to make it home</title>
   
+  <style>
+   .container{
+     position: relative;
+    text-align: center;
+    color: white;
+     
+     
+  }
+    .text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      opacity: 50%;
+    }
+    canvas{
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+  pointer-events: none; 
+}
+    
+  </style>
+ 
 </head>
 
 <body style="background: #020024;
 background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(181, 181, 181, 1) 100%);">
+  
+  <audio src="/windSounds.mp3" autoplay></audio>
+  <div class="container">
+    <img src="sunPark.jpeg" width="100%" style="mix-blend-mode: overlay;">
+    <div class="text"> to be home and quiet <br> moving from concrete to wooden floor
+      <br> tiled floor
+      <br> carpet<br> to call this home<br><br><br> to sink and sleep <br> and sleep again
+    </div>
+    
+  
+  </div>
 
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+<script>
+  /* global p5 */
+ function setup(){
+   createCanvas(windowWidth,windowHeight);
+ }
+function draw(){
+  background(245, 1);
+  frameRate(1);
+  blendMode(OVERLAY);
+  
+  for(let i=0; i < 5; i++)
+    {
+      rect(random(0,900),random(0,900), random(0,10), random(0,10));
+    }
+}
+</script>
+  
 </body>
